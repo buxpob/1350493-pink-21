@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Вихров Алексей](https://up.htmlacademy.ru/adaptive/21/user/1350493).
-* Наставник: `Неизвестно`.
+* Наставник: Лиза Пак.
 
 ---
 
