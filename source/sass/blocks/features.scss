@@ -1,5 +1,5 @@
 .features {
-  background-image: url("../../img/background-features.svg");
+  background-image: url("../img/background-features.svg");
   background-size: 1172px 828px;
   background-repeat: no-repeat;
   background-position: 0 50px;
@@ -9,7 +9,7 @@
 }
 .features__text {
   margin: 0;
-  color: $specialblack;
+  color: $black-special;
   font-size: 24px;
   line-height: 120%;
 }
@@ -17,7 +17,7 @@
 }
 .features__item {
 }
-.feature__tagline {
+.features__tagline {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
@@ -25,5 +25,5 @@
 .feature__description {
   font-weight: normal;
   line-height: 24px;
-  color: $specialblack;
+  color: $black-special;
 }

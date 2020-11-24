@@ -1,5 +1,5 @@
 .tariffs {
-  background-image: url("../../img/background-features.svg");
+  background-image: url("../img/background-features.svg");
   background-size: 1172px 828px;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -17,7 +17,7 @@
 }
 
 .tariffs__title {
-  background-color: $specialblack;
+  background-color: $black-special;
   color: $white;
   font-weight: bold;
   font-size: 16px;
@@ -30,7 +30,7 @@
 }
 
 .tariffs__hit {
-  background-color: $basicred;
+  background-color: $red-basic;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
