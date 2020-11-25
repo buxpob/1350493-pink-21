@@ -1,0 +1,28 @@
+// Colors
+
+$black: #000000;
+$black-basic: #1d2631;
+$black-opasity: rgba(0, 0, 0, 0.3);
+$black-special: #283645;
+
+$white: #ffffff;
+$gray-basic: #f2f2f2;
+$red-basic: #d22856;
+
+$green-basic: #2aab6d;
+$green-dark: #1c9b5e;
+
+$nav-button-color: $white;
+$nav-button-color--focus: $red-basic;
+$nav-button-color--active: $black-opasity;
+
+$download-button-color: $black-basic;
+$download-button-color--focus: $white;
+$download-button-color: $black-basic;
+
+$form-button-color: $green-basic;
+$form-button-color--focus: $green-dark;
+
+// Fonts
+
+$defult-font: "Open Sans", "Arial", sans-serif;
