@@ -1,0 +1,26 @@
+.form {
+  padding: 54px 20px 26px;
+  color: $black-special;
+}
+.form__text {
+}
+.form__legend {
+  line-height: 18px;
+  color: $form-legend-color;
+  text-transform: uppercase;
+}
+.form__button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: $form-button-color;
+  color: $white;
+  border: none;
+}
+.form__required-text {
+  text-transform: uppercase;
+}
+.form__warning-text {
+  color: $red-basic;
+}

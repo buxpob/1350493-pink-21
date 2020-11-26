@@ -1,0 +1,27 @@
+.news-item {
+}
+.news-item__img {
+}
+.news-item__blockquote {
+  background-color: $gray-basic;
+}
+.news-item__author-name {
+  font-style: normal;
+  font-weight: bold;
+  line-height: 24px;
+}
+.news-item__time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.news-item__text {
+  line-height: 24px;
+}
+.news-item__like {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $red-basic;
+}

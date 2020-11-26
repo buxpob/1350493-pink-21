@@ -1,0 +1,13 @@
+.form-test {
+  background-color: $gray-basic;
+}
+.form-test__list {
+  @include list-drop;
+}
+.form-test__item {
+}
+.form-test__input {
+}
+.form-test__label {
+  font-size: 18px;
+}

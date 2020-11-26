@@ -11,49 +11,49 @@
 
   <header class="page-header">
 
-    <nav class="main-nav">
-      <a class="main-nav__logo">
+    <nav class="main-nav container">
+      <a class="main-nav__logo" href="index.html">
         <img width="74" height="23" src="#" alt="Логотип сайта «Pink»">
       </a>
       <button class="main-nav__toggle" type="batton"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="#">
+          <a class="main-nav__link" href="index.html">
             Главная
           </a>
         </li>
         <li class="main-nav__item main-nav__item--current">
-          <a>
+          <a class="main-nav__link">
             Фотографии
           </a>
         </li>
         <li class="main-nav__item">
-          <a href="#">
+          <a class="main-nav__link" href="form.html">
             Конкурс
           </a>
         </li>
         <li class="main-nav__item">
-          <a href="#">
+          <a class="main-nav__link" href="#">
             HTML Academy
           </a>
         </li>
       </ul>
     </nav>
-    <p class="header-text">Фотографии пользователей</p>
+    <p class="header-text container">Фотографии пользователей</p>
   </header>
 
   <main class="page-main">
 
     <h1 class="visually-hidden">Новости наших пользователей</h1>
 
-    <section class="users-news">
+    <section class="users-news container">
       <p class="user-news__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
         ваших?</p>
       <ul class="users-news__list">
         <li class="users-news__item">
           <article class="news-item">
             <span class="users-news__day">Панорама дня</span>
-            <img class="news-item__img" src="#" width="320" height="137" alt="">
+            <img class="news-item__img" src="#" width="320" height="137" alt="Уходящий вдаль мост, внизу зелёный лес">
             <blockquote class="news-item__blockquote">
               <cite class="news-item__author-name">Анна</cite>
               <time class="news-item__time" datetime="">(5 минут назад)</time>
@@ -65,7 +65,8 @@
         </li>
         <li class="users-news__item">
           <article class="news-item">
-            <img class="news-item__img" src="#" width="280" height="180" alt="">
+            <img class="news-item__img" src="#" width="280" height="180"
+              alt="Видеокамера, напротив боком стоит белая машина на фоне чёрной стены ">
             <blockquote class="news-item__blockquote">
               <cite class="news-item__author-name">Левон</cite>
               <time class="news-item__time" datetime="">(5 часов назад)</time>
@@ -76,7 +77,7 @@
         </li>
         <li class="users-news__item">
           <article class="news-item">
-            <img class="news-item__img" src="#" width="280" height="180" alt="">
+            <img class="news-item__img" src="#" width="280" height="180" alt="Барабанная установка">
             <blockquote class="news-item__blockquote">
               <cite class="news-item__author-name">Антон</cite>
               <time class="news-item__time" datetime="">(12 часов назад)</time>
@@ -87,7 +88,8 @@
         </li>
         <li class="users-news__item">
           <article class="news-item">
-            <img class="news-item__img" src="#" width="280" height="180" alt="">
+            <img class="news-item__img" src="#" width="280" height="180"
+              alt="Решётчатая стеклянная крыша. За ней видны крыши других зданий.">
             <blockquote class="news-item__blockquote">
               <cite class="news-item__author-name">Борис</cite>
               <time class="news-item__time" datetime="">(20 часов назад)</time>
@@ -98,18 +100,18 @@
         </li>
         <li class="users-news__item">
           <article class="news-item">
-            <img class="news-item__img" src="#" width="280" height="180" alt="">
-            <blockquote class="news-item__blockquote">
-              <cite class="news-item__author-name">Сергей</cite>
-              <time class="news-item__time" datetime="">(25 часов назад)</time>
-              <p class="news-item__text">Самая кубанская в мире!</p>
-              <p class="news-item__like">Нравится: 4</p>
+            <img class="news-item__img" src="#" width="280" height="180" alt="Шатёр с овощами и фруктами. Вывеска Кубанская бахча>
+            <blockquote class=" news-item__blockquote">
+            <cite class="news-item__author-name">Сергей</cite>
+            <time class="news-item__time" datetime="">(25 часов назад)</time>
+            <p class="news-item__text">Самая кубанская в мире!</p>
+            <p class="news-item__like">Нравится: 4</p>
             </blockquote>
           </article>
         </li>
         <li class="users-news__item">
           <article class="news-item">
-            <img class="news-item__img" src="#" width="280" height="180" alt="">
+            <img class="news-item__img" src="#" width="280" height="180" alt="Ночи на фоне гор">
             <blockquote class="news-item__blockquote">
               <cite class="news-item__author-name">Максим</cite>
               <time class="news-item__time" datetime="">(45 часов назад)</time>
@@ -120,7 +122,8 @@
         </li>
         <li class="users-news__item">
           <article class="news-item">
-            <img class="news-item__img" src="#" width="280" height="180" alt="">
+            <img class="news-item__img" src="#" width="280" height="180"
+              alt="Крыло самолёта во время полёта и яркое солнце">
             <blockquote class="news-item__blockquote">
               <cite class="news-item__author-name">Надежда</cite>
               <time class="news-item__time" datetime="">(45 часов назад)</time>
@@ -132,12 +135,13 @@
       </ul>
     </section>
 
-    <section class="share-new">
+    <section class="share-new container">
 
       <h2 class="visually-hidden">Выложите свою фотографию с новостью</h2>
 
       <p class="share-new__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-      <img class="share-new__image" src="#" width="280" height="374" alt="Зимняя дорога, по краям деревья">
+      <img class="share-new__image" src="#" width="280" height="374"
+        alt="Зимняя дорога, уходящая вдаль. По краям деревья">
       <form class="share-new__form" action="#" method="get">
         <ul class="share-new__tools tools-list">
           <li class="tools-list__item">
@@ -159,13 +163,13 @@
         <div class="tools-range">
           <input class="tools-range__scale" type="range" min="1" max="100" value="50" class="slider" id="myRange">
         </div>
-        <button class="tools-button" type="submit">Запостить</button>
-        <button class="tools-button" type="reset">Отмена</button>
+        <button class="tools-button tools-button--send button" type="submit">Запостить</button>
+        <button class="tools-button tools-button--reset button" type="reset">Отмена</button>
       </form>
     </section>
 
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer container">
 
     <div class="page-footer__wrapper">
 
