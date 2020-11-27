@@ -1,0 +1,22 @@
+.users-news {
+  padding-top: 54px;
+}
+
+.user-news__text {
+}
+
+.users-news__list {
+  @include list-drop;
+}
+
+.users-news__item {
+}
+
+.users-news__day {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $red-basic;
+}

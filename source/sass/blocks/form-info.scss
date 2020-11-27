@@ -1,0 +1,14 @@
+.form-info {
+}
+.form-info__item {
+}
+.form-info__label {
+  text-transform: uppercase;
+  color: $red-basic;
+}
+.form-info__input {
+  font-size: 18px;
+  &::placeholder {
+    color: $black-special;
+  }
+}
