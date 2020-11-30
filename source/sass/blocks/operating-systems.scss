@@ -1,6 +1,9 @@
 .operating-systems {
 }
 .operating-systems__list {
+  @include list-drop;
+  display: flex;
+  justify-content: center;
 }
 .operating-systems__item {
 }

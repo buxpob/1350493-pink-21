@@ -1,4 +1,23 @@
 .header-text {
-  font-size: 25px;
-  line-height: 33px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .header-text {
+    font-size: 40px;
+    width: 230px;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header-text {
+    font-size: 50px;
+    width: 300px;
+    margin: 0;
+  }
 }

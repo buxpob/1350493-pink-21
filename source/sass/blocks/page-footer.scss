@@ -1,9 +1,19 @@
 .page-footer {
 }
+
 .page-footer__wrapper {
+  text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .page-footer__logo {
 }
 .page-footer__social {

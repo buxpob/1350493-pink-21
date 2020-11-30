@@ -1,16 +1,43 @@
 .main-nav {
   background-color: $black-opacity;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
+
+.main-nav__box {
+  display: flex;
+  justify-content: space-between;
+  min-height: 66px;
+  margin-bottom: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__box {
+    min-height: 110px;
+  }
+}
+
 .main-nav__logo {
 }
+
 .main-nav__toggle {
 }
-.visually-hidden {
+
+@media (min-width: $desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
 }
+
 .main-nav__list {
+  @include list-drop;
 }
+
 .main-nav__item {
+  padding: 0;
 }
+
 .main-nav__link {
   color: $white;
   font-weight: bold;
@@ -18,5 +45,6 @@
   line-height: 32px;
   text-transform: uppercase;
 }
+
 .main-nav__item--current {
 }

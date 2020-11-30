@@ -1,11 +1,25 @@
 .study {
+  display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .study {
+    display: block;
+  }
+}
+
 .study__wrapper {
+  display: flex;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 .study__image {
 }
+
+.study__box {
+  margin-left: 50px;
+}
+
 .study__tagline {
   font-weight: bold;
   font-size: 30px;

@@ -4,10 +4,22 @@
 }
 
 .download-app__wrapper {
+  margin: 0 auto;
+  text-align: center;
   padding-top: 28px;
+  padding-bottom: 30px;
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .download-app__wrapper {
+    margin-left: 0;
+    width: 300px;
+  }
 }
 
 .download-app__button {
   background-color: $black-basic;
   color: $white;
+  min-width: 280px;
 }

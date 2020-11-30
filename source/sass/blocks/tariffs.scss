@@ -2,7 +2,7 @@
   background-image: url("../img/background-features.svg");
   background-size: 1172px 828px;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center 0;
 }
 
 .tariffs__wrapper {
@@ -10,11 +10,13 @@
   padding-bottom: 50px;
 }
 
-.tariffs__list {
-}
 .tariffs__table {
+  width: 100%;
 }
+
 .tariffs__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .tariffs__title {
@@ -40,7 +42,4 @@
 
 .tariffs__option {
   text-transform: uppercase;
-}
-
-.tariffs__toggle {
 }
