@@ -3,6 +3,12 @@
   color: $white;
 }
 
+@media (min-width: $tablet-width) {
+  .download-app {
+    background-color: transparent;
+  }
+}
+
 .download-app__wrapper {
   margin: 0 auto;
   text-align: center;
@@ -15,11 +21,18 @@
   .download-app__wrapper {
     margin-left: 0;
     width: 300px;
+    background-color: transparent;
   }
 }
 
 .download-app__button {
   background-color: $black-basic;
   color: $white;
-  min-width: 280px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .download-app__button {
+    background-color: transparent;
+  }
 }

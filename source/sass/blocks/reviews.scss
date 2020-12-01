@@ -15,14 +15,6 @@
   }
 }
 
-.slider__item {
-  display: none;
-}
-
-.slider__item--current {
-  display: block;
-}
-
 .reviews__author-name {
   order: 2;
   font-style: normal;
@@ -50,8 +42,4 @@
 
 .reviews__text {
   color: $black-special;
-}
-
-.slider__toggles {
-  text-align: center;
 }
