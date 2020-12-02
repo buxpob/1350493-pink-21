@@ -1,6 +1,6 @@
 .tariffs {
   background-image: url("../img/background-features.svg");
-  background-size: 1172px 828px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center 0;
 }
@@ -8,6 +8,7 @@
 .tariffs__wrapper {
   padding-top: 50px;
   padding-bottom: 50px;
+  overflow: hidden;
 }
 
 .tariffs__table {
@@ -16,7 +17,11 @@
 
 .tariffs__row {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 100vw 100vw 100vw;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .tariffs__title {
@@ -41,5 +46,23 @@
 }
 
 .tariffs__option {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.tariffs__option-text {
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.tariffs__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

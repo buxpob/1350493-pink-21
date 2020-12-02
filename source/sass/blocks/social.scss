@@ -1,8 +1,9 @@
 .social {
-  text-align: center;
 }
+
 .social__list {
   @include list-drop;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

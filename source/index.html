@@ -12,13 +12,13 @@
 
   <header class="page-header">
 
-    <nav class="main-nav container">
+    <nav class="main-nav">
 
-      <div class="main-nav__box">
+      <div class="main-nav__box container">
         <a class="main-nav__logo">
           <img width="74" height="23" src="#" alt="Логотип сайта «Pink»">
         </a>
-        <button class="main-nav__toggle" type="batton"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
 
       <ul class="main-nav__list">
@@ -46,9 +46,9 @@
 
     </nav>
 
-    <p class="header-text container">Взгляните на жизнь иначе!</p>
+    <p class="header-text header-text--index container">Взгляните на жизнь иначе!</p>
 
-    <img class="header-image" src="#" width="320" height="286"
+    <img class="header-image" src="../img/header-image.png" width="320" height="286"
       alt="Рука держит смартфон. На экране смартфона фотография дома в розовом цвете">
 
     <div class="download-app container">
@@ -73,7 +73,7 @@
               </a>
             </li>
           </ul>
-          <p class="operating-systems__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <p class="operating-systems__text">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
         </div>
       </div>
     </div>
@@ -191,6 +191,8 @@
             </div>
           </blockquote>
         </div>
+        <button class="slider__button slider__button-next" type="button">next</button>
+        <button class="slider__button slider__button-back" type="button">back</button>
       </div>
 
       <p class="reviews__toggle slider__toggles">
@@ -201,14 +203,14 @@
 
     </section>
 
-    <section class="tariffs container">
+    <section class="tariffs">
 
       <h2 class="visually-hidden">Наши тарифы</h2>
 
       <div class="tariffs__wrapper">
         <table class="tariffs__table">
           <tr class="tariffs__row">
-            <th></th>
+            <th class="tariffs__option"></th>
             <th class="tariffs__title">
               База<br>
               <span class="tariffs__price">1,99 USD</span>
@@ -227,25 +229,34 @@
             <td class="tariffs__option">
               Розовый фильтр
             </td>
-            <td><img src="#" width="31" height="21" alt="Зелёная галочка"></td>
-            <td><img src="#" width="31" height="21" alt="Зелёная галочка"></td>
-            <td><img src="#" width="31" height="21" alt="Зелёная галочка"></td>
+            <td><span class="tariffs__option-text">Розовый фильтр</span><img src="#" width="31" height="21"
+                alt="Зелёная галочка"></td>
+            <td><span class="tariffs__option-text">Розовый фильтр</span><img src="#" width="31" height="21"
+                alt="Зелёная галочка"></td>
+            <td><span class="tariffs__option-text">Розовый фильтр</span><img src="#" width="31" height="21"
+                alt="Зелёная галочка"></td>
           </tr>
           <tr class="tariffs__row">
             <td class="tariffs__option">
               Смайлики
             </td>
-            <td><img src="#" width="27" height="27" alt="Красный крестик"></td>
-            <td><img src="#" width="31" height="21" alt="Зелёная галочка"></td>
-            <td><img src="#" width="27" height="27" alt="Красный крестик"></td>
+            <td><span class="tariffs__option-text">Смайлики</span><img src="#" width="27" height="27"
+                alt="Красный крестик"></td>
+            <td><span class="tariffs__option-text">Смайлики</span><img src="#" width="31" height="21"
+                alt="Зелёная галочка"></td>
+            <td><span class="tariffs__option-text">Смайлики</span><img src="#" width="27" height="27"
+                alt="Красный крестик"></td>
           </tr>
           <tr class="tariffs__row">
             <td class="tariffs__option">
               Комментарии
             </td>
-            <td><img src="#" width="27" height="27" alt="Красный крестик"></td>
-            <td><img src="#" width="31" height="21" alt="Зелёная галочка"></td>
-            <td><img src="#" width="31" height="21" alt="Зелёная галочка"></td>
+            <td><span class="tariffs__option-text">Комментарии</span><img src="#" width="27" height="27"
+                alt="Красный крестик"></td>
+            <td><span class="tariffs__option-text">Комментарии</span><img src="#" width="31" height="21"
+                alt="Зелёная галочка"></td>
+            <td><span class="tariffs__option-text">Комментарии</span><img src="#" width="31" height="21"
+                alt="Зелёная галочка"></td>
           </tr>
         </table>
       </div>
@@ -284,16 +295,21 @@
 
     </section>
 
-    <section class="map">
-      <a class="map__link" href="#"><img class="map__image" src="#" width="320" height="200" alt="Карта"></a>
-      <img class="map__marker" src="#" alt="Указатель адреса">
-    </section>
+  </main>
 
-    <footer class="page-footer container">
+  <footer class="page-footer">
 
-      <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper">
+
+      <section class="map">
+        <a class="map__link" href="#"><img class="map__image" src="#" width="320" height="200" alt="Карта"></a>
+        <img class="map__marker" src="#" alt="Указатель адреса">
+      </section>
+
+      <div class="page-footer__info container">
 
         <a class="page-footer__logo" href="#"><img src="#" width="145" height="40" alt="Логотип сайта «Pink»"></a>
+
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item"><a class="social__link" href="#">a<img src="#" width="18" height="14" alt=""><span
@@ -308,12 +324,13 @@
           <p class="copyright__text">Разработано</p>
           <img class="copyright__image" src="#" width="27" height="34" alt="Логотип HTML Academy">
         </div>
-
       </div>
 
-    </footer>
+    </div>
 
-  </main>
+  </footer>
+
 </body>
+</head>
 
 </html>

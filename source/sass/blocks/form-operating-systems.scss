@@ -1,5 +1,6 @@
 .form-operating-systems {
   background-color: $gray-basic;
+  border: none;
 }
 .form-operating-systems__list {
   @include list-drop;

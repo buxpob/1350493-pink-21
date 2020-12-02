@@ -1,5 +1,16 @@
+.slider {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .slider__item {
   display: none;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 10%;
+  }
 }
 
 .slider__item--current {
@@ -8,4 +19,22 @@
 
 .slider__toggles {
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.slider__button {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.slider__button-back {
+  @media (min-width: $desktop-width) {
+    order: -1;
+  }
 }

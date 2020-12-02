@@ -1,8 +1,8 @@
 .features {
   background-image: url("../img/background-features.svg");
-  background-size: 1200px 828px;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 50px;
+  background-position: center 150px;
 }
 .features__wrapper {
   padding-top: 46px;
@@ -15,48 +15,44 @@
   color: $black-special;
   font-size: 24px;
   line-height: 120%;
-}
 
-@media (min-width: $tablet-width) {
-  .features__text--first {
+  @media (min-width: $tablet-width) {
     padding: 0;
   }
 }
 
 .features__box {
-}
+  margin-top: 50px;
 
-@media (min-width: $tablet-width) {
-  .features__box {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 }
 
 .features__list {
   @include list-drop;
-}
 
-@media (min-width: $tablet-width) {
-  .features__list {
+  @media (min-width: $tablet-width) {
     padding-left: 50px;
-    margin: 0 auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .features__list {
+  @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 }
 
 .features__item {
   text-align: center;
-}
 
-@media (min-width: $desktop-width) {
-  .features__item {
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
     width: 30%;
     margin-right: 3%;
   }
@@ -80,10 +76,8 @@
 .features__image {
   margin: 0 auto;
   display: none;
-}
 
-@media (min-width: $desktop-width) {
-  .features__image {
+  @media (min-width: $desktop-width) {
     display: block;
   }
 }
@@ -92,17 +86,13 @@
   display: block;
   max-width: 280px;
   border: 1px solid black;
-}
 
-@media (min-width: $tablet-width) {
-  .features__image-visible {
+  @media (min-width: $tablet-width) {
     order: -1;
     margin: 0 auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .features__image-visible {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }

@@ -1,7 +1,8 @@
 .page-header {
   color: $white;
-  background-image: url("../img/background-header.svg");
+  background-image: url("../img/background-header.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 50% 50%;
+  background-size: cover;
   background-color: $black-basic;
 }
