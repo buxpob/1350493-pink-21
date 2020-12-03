@@ -2,25 +2,25 @@
   padding: 54px 20px 26px;
   color: $black-special;
 }
+
 .form__text {
+  margin: 0;
+  text-align: center;
 }
+
 .form__legend {
+  background-color: $gray-basic;
+  width: 220px;
   line-height: 18px;
   color: $form-legend-color;
   text-transform: uppercase;
+  text-align: center;
 }
-.form__button {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  background-color: $form-button-color;
-  color: $white;
-  border: none;
-}
+
 .form__required-text {
   text-transform: uppercase;
 }
+
 .form__warning-text {
   color: $red-basic;
 }

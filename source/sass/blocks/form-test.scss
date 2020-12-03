@@ -1,5 +1,6 @@
 .form-test {
   background-color: $gray-basic;
+  border: none;
 }
 .form-test__list {
   @include list-drop;

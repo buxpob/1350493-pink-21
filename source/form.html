@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Сайт фотоприложения для раскрашивания серых будней «Pink»</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -12,10 +13,14 @@
   <header class="page-header">
 
     <nav class="main-nav container">
-      <a class="main-nav__logo" href="index.html">
-        <img width="74" height="23" src="#" alt="Логотип сайта «Pink»">
-      </a>
-      <button class="main-nav__toggle" type="batton"><span class="visually-hidden">Открыть меню</span></button>
+
+      <div class="main-nav__box">
+        <a class="main-nav__logo" href="index.html">
+          <img width="74" height="23" src="#" alt="Логотип сайта «Pink»">
+        </a>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="index.html">
@@ -38,22 +43,23 @@
           </a>
         </li>
       </ul>
+
     </nav>
 
-    <p class="header-text container">Конкурс на самое безбашенное путешествие с Пинк</p>
+    <p class="header-text container">Конкурс на самое безбашенное<br>путешествие с Пинк</p>
 
   </header>
 
-  <main class="page-main container">
+  <main class="page-main">
 
     <h1 class="visually-hidden">Поделись своей историей и учавствуй в конкурсе</h1>
 
-    <section class="form">
+    <section class="form container">
 
       <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
         бонусную карту!</p>
-      <form action="#" method="get">
-        <fieldset class="form-info">
+      <form class="form__box" action="#" method="get">
+        <fieldset class="form-info container">
           <legend class="visually-hidden">Введите своё имя, фамилию и отчество</legend>
           <p class="form-info__item">
             <label class="form-info__label" for="surname">Фамилия:</label>
@@ -164,6 +170,12 @@
     </div>
 
   </footer>
+
+  <!-- <section class="modal modal-error container">
+    <p class="modal__tagline"></p>
+    <p class="modal__text"></p>
+    <button class="modal__button form-button"></button>
+  </section> -->
 
 </body>
 

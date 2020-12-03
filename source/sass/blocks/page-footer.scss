@@ -1,11 +1,33 @@
 .page-footer {
 }
+
 .page-footer__wrapper {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.page-footer__logo {
+
+.page-footer__info {
+  padding-right: 40px;
 }
+
+.page-footer__info {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__logo {
+  width: 145px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
 .page-footer__social {
 }
 .page-footer__copyright {

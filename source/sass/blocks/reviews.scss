@@ -1,21 +1,43 @@
-.reviews {
-}
 .reviews__wrapper {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.reviews__list {
-}
+
 .reviews__item {
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
+
 .reviews__author-name {
+  order: 2;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
+
+.reviews__autor-info {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    order: 2;
+  }
+}
+
 .reviews__text {
   color: $black-special;
-}
-.reviews__toggle {
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }

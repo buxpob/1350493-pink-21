@@ -1,14 +1,26 @@
 .form-info {
+  border: none;
+  padding: 0;
+  margin: 0;
 }
+
 .form-info__item {
 }
+
 .form-info__label {
   text-transform: uppercase;
   color: $red-basic;
+  padding: 23px;
+  cursor: pointer;
 }
+
 .form-info__input {
+  box-sizing: border-box;
+  height: 60px;
+  width: 100%;
   font-size: 18px;
   &::placeholder {
     color: $black-special;
+    padding-left: 23px;
   }
 }

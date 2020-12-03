@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -19,4 +23,8 @@ img {
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
+}
+
+a {
+  text-decoration: none;
 }
