@@ -1,0 +1,48 @@
+.form-info-contacts {
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    @include border-form;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+.form-info-contacts__wrapper {
+  grid-area: contacts;
+}
+
+.form-info-contacts__legend {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.form-info-contacts__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 20px;
+    width: 48%;
+  }
+}
+
+.form-info-contacts__label {
+  padding-top: 12px;
+  padding-left: 23px;
+  margin-right: auto;
+  order: 2;
+}
+
+.form-info-contacts__input {
+}
