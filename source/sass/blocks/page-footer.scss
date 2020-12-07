@@ -8,12 +8,10 @@
 
 .page-footer__info {
   padding-right: 40px;
-}
 
-.page-footer__info {
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
   }
 }
 
@@ -24,11 +22,6 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin-left: 0;
   }
-}
-
-.page-footer__social {
-}
-.page-footer__copyright {
 }

@@ -1,5 +1,6 @@
 .form-info-contacts {
   padding: 0;
+  border: 1px solid red;
 
   @media (min-width: $tablet-width) {
     @include border-form;
@@ -14,6 +15,7 @@
 
 .form-info-contacts__wrapper {
   grid-area: contacts;
+  width: 100%;
 }
 
 .form-info-contacts__legend {

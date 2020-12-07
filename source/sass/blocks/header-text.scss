@@ -18,13 +18,14 @@
 .header-text--index {
   @media (min-width: $tablet-width) {
     font-size: 40px;
-    margin-left: 30px;
     width: 300px;
+    padding: 0;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 50px;
-    margin: 0;
-    width: 500px;
+    max-width: 500px;
+    padding-left: 0;
   }
 }

@@ -6,6 +6,9 @@
 
   @media (min-width: $desktop-width) {
     padding-right: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: 570px;
   }
 }
 
