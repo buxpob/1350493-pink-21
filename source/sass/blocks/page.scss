@@ -5,12 +5,12 @@
   line-height: 30px;
   font-weight: normal;
   color: $black-special;
-  min-width: 320px;
 }
 
 .page__body {
   min-height: 100%;
-  margin: 0;
+  margin: 0 auto;
+  min-width: 320px;
   background-color: $white;
   color: $black-special;
 }

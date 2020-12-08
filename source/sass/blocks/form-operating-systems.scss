@@ -1,14 +1,39 @@
 .form-operating-systems {
-  background-color: $gray-basic;
-  border: none;
+  @include form-drop;
+
+  @media (min-width: $tablet-width) {
+    @include border-form;
+  }
 }
+
+.form-operating-systems__wrapper {
+  grid-area: systems;
+  background-color: $gray-basic;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    max-width: 570px;
+  }
+}
+
 .form-operating-systems__list {
   @include list-drop;
 }
+
 .form-operating-systems__item {
+  margin-bottom: 37px;
 }
+
 .form-operating-systems__input {
 }
+
 .form-operating-systems__label {
   font-size: 18px;
+  padding-left: 60px;
 }

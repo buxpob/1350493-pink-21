@@ -1,0 +1,26 @@
+.form-info-name {
+}
+
+.form-info-name__wrapper {
+  grid-area: name;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: 570px;
+  }
+}
+
+.form-info-name__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.form-info-name__label {
+}
+
+.form-info-name__input {
+}

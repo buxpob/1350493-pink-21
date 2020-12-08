@@ -1,14 +1,40 @@
 .form-test {
-  background-color: $gray-basic;
-  border: none;
+  @include form-drop;
+
+  @media (min-width: $tablet-width) {
+    @include border-form;
+  }
 }
+
+.form-test__wrapper {
+  grid-area: test;
+  background-color: $gray-basic;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+}
+
 .form-test__list {
   @include list-drop;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
 }
+
 .form-test__item {
+  padding-bottom: 45px;
 }
+
 .form-test__input {
 }
+
 .form-test__label {
   font-size: 18px;
+  padding-left: 60px;
 }

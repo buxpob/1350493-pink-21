@@ -9,6 +9,16 @@
   padding-top: 50px;
   padding-bottom: 50px;
   overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 130px;
+  }
 }
 
 .tariffs__table {

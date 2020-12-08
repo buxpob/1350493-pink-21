@@ -1,26 +1,88 @@
 .form {
-  padding: 54px 20px 26px;
+  padding-top: 54px;
+  padding-bottom: 26px;
   color: $black-special;
 }
 
+.form__box {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas:
+      "name"
+      "systems"
+      "contacts"
+      "test"
+      "comment"
+      "footer";
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "name systems"
+      "contacts contacts"
+      "test test"
+      "comment comment"
+      "footer footer";
+  }
+}
+
 .form__text {
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 70%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 72%;
+  }
+}
+
+.form__desc {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
 }
 
 .form__legend {
-  background-color: $gray-basic;
   width: 220px;
   line-height: 18px;
   color: $form-legend-color;
   text-transform: uppercase;
+  margin: 0 auto;
   text-align: center;
+  margin-bottom: 45px;
 }
 
 .form__required-text {
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
 }
 
 .form__warning-text {
   color: $red-basic;
+}
+
+.form__footer {
+  grid-area: footer;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    max-width: 1200px;
+  }
 }
