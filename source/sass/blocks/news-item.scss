@@ -1,10 +1,27 @@
 .news-item {
-}
-.news-item__img {
-}
-.news-item__blockquote {
   background-color: $gray-basic;
 }
+
+.news-item__img {
+}
+
+.news-item__img-panorama {
+  position: relative;
+  width: 100vw;
+}
+
+.news-item__blockquote {
+  @include list-drop;
+
+  &-panorama {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}
+
 .news-item__author-name {
   font-style: normal;
   font-weight: bold;
@@ -16,12 +33,23 @@
   line-height: 24px;
   text-transform: uppercase;
 }
+
 .news-item__text {
   line-height: 24px;
+  width: 100%;
+
+  &-panorama {
+    order: 3;
+  }
 }
+
 .news-item__like {
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
   color: $red-basic;
+
+  &-panorama {
+    order: 2;
+  }
 }

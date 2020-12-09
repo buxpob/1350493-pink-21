@@ -1,11 +1,21 @@
-.share-new {
-}
-.share-new__text {
-}
-.share-new__image {
-}
-.share-new__form {
+.share-new__wrapper {
   background-color: $gray-basic;
 }
+
+.share-new {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8%;
+  }
+}
+
+.share-new__image {
+  margin: 0 auto;
+}
+
+.share-new__form {
+}
+
 .share-new__tools {
 }

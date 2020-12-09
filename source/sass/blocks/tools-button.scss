@@ -1,11 +1,17 @@
-.tools-button {
+.tools-buttons {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
-.tools-button--send {
+
+.tools-buttons--send {
   color: $red-basic;
   border-color: $red-basic;
 }
 
-.tools-button--reset {
+.tools-buttons--reset {
+  border-color: $black-special;
   color: $black-special;
   opacity: 0.1;
 }
