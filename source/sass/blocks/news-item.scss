@@ -6,8 +6,12 @@
 }
 
 .news-item__img-panorama {
-  position: relative;
+  display: block;
   width: 100vw;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: calc(-50vw + 50%);
 }
 
 .news-item__blockquote {
@@ -44,10 +48,12 @@
 }
 
 .news-item__like {
+  margin: 0;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
   color: $red-basic;
+  align-self: bottom;
 
   &-panorama {
     order: 2;

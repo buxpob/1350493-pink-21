@@ -35,13 +35,16 @@
 }
 
 .users-news__item {
+  display: flex;
+  flex-direction: column;
   position: relative;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     width: 48%;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 30%;
   }
 }
