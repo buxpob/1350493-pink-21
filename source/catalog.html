@@ -10,7 +10,7 @@
 
 <body class="page__body">
 
-  <header class="page-header">
+  <header class="page-header page-header--catalog">
 
     <nav class="main-nav">
 
@@ -18,20 +18,24 @@
 
         <div class="main-nav__box main-nav__box--closed main-nav__box--nojs container">
           <a class="main-nav__logo" href="index.html">
-            <img width="74" height="23" src="img/header/logo-mobile.svg" alt="Логотип сайта «Pink»">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/header/logo-pink-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/header/logo-pink-tablet.svg">
+              <img src="img/header/logo-pink-mobile.svg" width="100%" height="" alt="Логотип сайта «Pink»">
+            </picture>
           </a>
           <button class="main-nav__toggle main-nav__toggle--nojs" type="button"><span class="visually-hidden">Открыть
               меню</span></button>
         </div>
 
         <ul class="main-nav__list main-nav__list--closed main-nav__list--nojs">
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--current">
             <a class="main-nav__link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
               Фотографии
             </a>
           </li>
@@ -60,10 +64,7 @@
 
     <section class="users-news container">
       <p class="catalog-text users-news__text">Взгляните на фотографии, которые выкладывают пользователи! <br>Видите,
-        как
-        не
-        хватает
-        ваших?</p>
+        как не хватает ваших?</p>
       <ul class="users-news__list">
         <li class="users-news__item users-news__item-panorama">
           <article class="news-item">
