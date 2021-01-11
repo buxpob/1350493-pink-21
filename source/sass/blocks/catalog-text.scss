@@ -1,0 +1,9 @@
+.catalog-text {
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin: 0 auto;
+  }
+}

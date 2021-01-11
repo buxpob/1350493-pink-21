@@ -1,35 +1,85 @@
 .study {
   display: none;
-}
 
-@media (min-width: $tablet-width) {
-  .study {
+  @media (min-width: $tablet-width) {
     display: block;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $gray-basic;
   }
 }
 
 .study__wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: min-content 1fr;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 15px;
+    padding-bottom: 58px;
+  }
 }
+
 .study__image {
+  width: 238px;
+  margin-right: 30px;
+
+  @media (min-width: $desktop-width) {
+    width: 298px;
+  }
+}
+
+.study__image img {
+  width: 100%;
 }
 
 .study__box {
-  margin-left: 50px;
+  padding: 43px 10px 40px 42px;
 }
 
 .study__tagline {
+  margin: 0;
+  margin-bottom: 11px;
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
+    margin-bottom: 21px;
+  }
 }
+
+.study__tagline br {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .study__text {
+  margin: 0;
+  margin-bottom: 7px;
   line-height: 24px;
   color: $black-special;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+  }
 }
+
 .study__link {
+  text-decoration: underline;
   line-height: 24px;
   color: $red-basic;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

@@ -1,11 +1,13 @@
 .container {
   padding: 0 20px 0;
-}
 
-@media (min-width: $desktop-width) {
-  .container {
-    padding: 0 130px 0;
+  @media (min-width: $desktop-width) {
+    padding: 0 80px 0;
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $max-desktop-width) {
+    padding: 0 130px 0;
   }
 }

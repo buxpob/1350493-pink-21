@@ -1,15 +1,40 @@
 .operating-systems {
 }
+
 .operating-systems__list {
   @include list-drop;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
-.operating-systems__item {
+
+.operating-systems__item:nth-child(3) {
+  padding-top: 4px;
 }
+
 .operating-systems__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: $white;
+  width: 80px;
+  height: 74px;
 }
+
 .operating-systems__text {
+  font-weight: 300;
+  font-size: 14px;
   line-height: 24px;
+  margin: 0;
+  margin-top: 9px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin-top: 21px;
+  }
+
+  @media (min-width: $max-desktop-width) {
+    margin-top: 39px;
+  }
 }

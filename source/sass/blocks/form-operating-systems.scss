@@ -1,17 +1,22 @@
 .form-operating-systems {
-  @include form-drop;
-
-  @media (min-width: $tablet-width) {
-    @include border-form;
-  }
-}
-
-.form-operating-systems__wrapper {
-  grid-area: systems;
+  padding-top: 38px;
   background-color: $gray-basic;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
+    grid-area: systems;
+    padding-top: 0;
+    margin-bottom: 60px;
+  }
+}
+
+.form-operating-systems__wrapper {
+  @include form-drop;
+  padding-bottom: 1px;
+  @media (min-width: $tablet-width) {
+    padding: 9px 60px 12px 58px;
+
+    @include border-form;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,16 +29,48 @@
 
 .form-operating-systems__list {
   @include list-drop;
+
+  @media (min-width: $tablet-width) {
+  }
 }
 
 .form-operating-systems__item {
-  margin-bottom: 37px;
+  margin-bottom: 43px;
 }
 
 .form-operating-systems__input {
+  position: fixed;
+}
+
+.form-operating-systems__input + label::before {
+  position: absolute;
+  left: 1px;
+  top: -7px;
+  content: "";
+  width: 37px;
+  height: 37px;
+  background-color: $white;
+  border: 1px solid $gray-special;
+  border-radius: 50%;
+}
+
+.form-operating-systems__input:checked + label::after {
+  position: absolute;
+  left: 13px;
+  top: 5px;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: $red-basic;
+  border-radius: 50%;
 }
 
 .form-operating-systems__label {
+  position: relative;
   font-size: 18px;
-  padding-left: 60px;
+  padding-left: 70px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 61px;
+  }
 }

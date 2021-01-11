@@ -23,6 +23,23 @@ img {
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
+  display: block;
+  border-radius: 30px;
+  border: 3px solid $red-basic;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  width: 100%;
+
+  &--send {
+    color: $red-basic;
+    border-color: $red-basic;
+  }
+
+  &--reset {
+    border-color: $black-special;
+    color: $black-special;
+    opacity: 0.1;
+  }
 }
 
 a {

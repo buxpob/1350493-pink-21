@@ -16,10 +16,12 @@
 }
 
 .header-text--index {
+  margin-top: 23px;
+  margin-bottom: 30px;
+
   @media (min-width: $tablet-width) {
     font-size: 40px;
     width: 300px;
-    padding: 0;
     margin-left: 0;
   }
 
@@ -27,5 +29,26 @@
     font-size: 50px;
     max-width: 500px;
     padding-left: 0;
+    margin-bottom: 9px;
+    line-height: 68px;
+  }
+}
+
+.header-text--form {
+  font-size: 24px;
+  line-height: 33px;
+  margin-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 68px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    padding-left: 0;
+    margin-bottom: 9px;
+    line-height: 68px;
   }
 }

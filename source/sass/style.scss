@@ -22,11 +22,13 @@
 @import "blocks/study.scss";
 @import "blocks/reviews.scss";
 @import "blocks/slider.scss";
+@import "blocks/slider-toggle.scss";
 @import "blocks/tariffs.scss";
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
+@import "blocks/map.scss";
 
 // Form
 
@@ -43,7 +45,8 @@
 // Catalog
 
 @import "blocks/news-item.scss";
+@import "blocks/catalog-text.scss";
 @import "blocks/share-new.scss";
 @import "blocks/tools-list.scss";
-@import "blocks/tools-range.scss";
+@import "blocks/tools-scale.scss";
 @import "blocks/tools-button.scss";

@@ -7,11 +7,29 @@
 .social__list {
   @include list-drop;
 
+  margin-top: 37px;
+  margin-bottom: 32px;
+  margin-left: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
+
 .social__item {
 }
+
 .social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 7px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 3px solid $black-superopacity;
 }

@@ -14,3 +14,13 @@
   border: 2px solid $gray-special;
   border-radius: 1px;
 }
+
+@mixin item-interaction {
+  &:hover,
+  &:focus {
+    color: $red-basic;
+  }
+  &:active {
+    color: $red-opacity;
+  }
+}

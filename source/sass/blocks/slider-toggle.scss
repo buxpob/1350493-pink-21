@@ -1,0 +1,42 @@
+.slider-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.slider-toggle__button {
+  position: relative;
+  display: block;
+  padding: 10px 12px;
+  background-color: $white;
+  border: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 8px;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $black-special;
+    opacity: 0.3;
+  }
+
+  &--current::before {
+    position: absolute;
+    content: "";
+    left: 6px;
+    top: 5px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 3px solid $black-special;
+    background-color: $white;
+    opacity: 1;
+  }
+}

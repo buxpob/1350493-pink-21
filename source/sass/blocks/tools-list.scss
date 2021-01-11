@@ -1,0 +1,28 @@
+.tools-list {
+  @include list-drop;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.tools-list__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.tools-list__button {
+}
+
+.tools-list__scale {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

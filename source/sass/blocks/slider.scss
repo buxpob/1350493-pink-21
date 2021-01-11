@@ -17,16 +17,13 @@
   display: block;
 }
 
-.slider__toggles {
-  text-align: center;
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
 .slider__button {
   display: none;
+  width: 50px;
+  height: 60px;
+  margin-top: 30px;
+  background-color: transparent;
+  border: none;
 
   @media (min-width: $desktop-width) {
     display: block;
@@ -36,5 +33,16 @@
 .slider__button-back {
   @media (min-width: $desktop-width) {
     order: -1;
+    background-image: url("../../img/index/left-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+  }
+}
+
+.slider__button-next {
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/index/right-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 6px center;
   }
 }

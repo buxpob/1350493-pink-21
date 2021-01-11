@@ -1,0 +1,13 @@
+.tools-scale {
+  min-width: 240px;
+  display: none;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.tools-scale__current {
+  display: block;
+}

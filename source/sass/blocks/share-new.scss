@@ -1,11 +1,38 @@
 .share-new {
-}
-.share-new__text {
-}
-.share-new__image {
-}
-.share-new__form {
   background-color: $gray-basic;
 }
+
+.share-new__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8%;
+  }
+}
+
+.share-new__image {
+  margin: 0 auto;
+}
+
+.share-new__form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: 1fr min-content;
+    grid-template-areas:
+      "tools scale"
+      "buttons buttons";
+  }
+}
+
 .share-new__tools {
+  grid-area: tools;
+}
+
+.share-new__scale {
+  grid-area: scale;
+}
+
+.share-new__buttons {
+  grid-area: buttons;
 }
