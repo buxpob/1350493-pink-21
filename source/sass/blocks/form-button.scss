@@ -6,9 +6,15 @@
   background-color: $form-button-color;
   color: $white;
   border: none;
+  border-radius: 1px;
 }
 
 .form-button--send {
   width: 100%;
-  min-height: 60px;
+  min-height: 62px;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }

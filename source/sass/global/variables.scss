@@ -4,6 +4,7 @@ $black: #000000;
 $black-basic: #1d2631;
 $black-opacity: rgba(0, 0, 0, 0.3);
 $black-special: #283645;
+$black-superopacity: rgba(40, 54, 69, 0.1);
 
 $white: #ffffff;
 $white-opacity: rgba(255, 255, 255, 0.3);
@@ -36,6 +37,8 @@ $defult-font: "Open Sans", "Arial", sans-serif;
 
 // Viewports
 
+$middle-width: 500px;
 $tablet-width: 660px;
 $desktop-width: 960px;
+$max-desktop-width: 1200px;
 $mobile-width-only: 659px;

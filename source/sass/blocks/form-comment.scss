@@ -1,28 +1,35 @@
 .form-comment {
-  @include form-drop;
+  padding-top: 38px;
+  grid-area: comment;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    @include border-form;
-    padding: 0 60px 40px;
+    padding-top: 59px;
   }
 }
 
 .form-comment__wrapper {
-  grid-area: comment;
-  width: 100%;
+  @include form-drop;
+  padding-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    @include border-form;
+    padding: 21px 59px 40px;
+  }
 }
 
 .form-comment__text {
   width: 100%;
-  height: 200px;
+  min-height: 200px;
   font-size: 18px;
   line-height: 30px;
   padding: 20px;
+  padding-top: 14px;
   @include border-form;
 
   &::placeholder {
     color: $black-special;
-    text-align: center;
+    text-align: left;
 
     @media (min-width: $desktop-width) {
       text-align: left;
@@ -30,7 +37,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 190px;
+    min-height: 193px;
   }
 
   @media (min-width: $desktop-width) {

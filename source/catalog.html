@@ -14,36 +14,43 @@
 
     <nav class="main-nav">
 
-      <div class="main-nav__box container">
-        <a class="main-nav__logo" href="index.html">
-          <img width="74" height="23" src="#" alt="Логотип сайта «Pink»">
-        </a>
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+
+        <div class="main-nav__box main-nav__box--closed main-nav__box--nojs container">
+          <a class="main-nav__logo" href="index.html">
+            <img width="74" height="23" src="img/header/logo-mobile.svg" alt="Логотип сайта «Pink»">
+          </a>
+          <button class="main-nav__toggle main-nav__toggle--nojs" type="button"><span class="visually-hidden">Открыть
+              меню</span></button>
+        </div>
+
+        <ul class="main-nav__list main-nav__list--closed main-nav__list--nojs">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link">
+              Фотографии
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">
+              Конкурс
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+
       </div>
 
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="main-nav__item main-nav__item--current">
-          <a class="main-nav__link">
-            Фотографии
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">
-            Конкурс
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">
-            HTML Academy
-          </a>
-        </li>
-      </ul>
     </nav>
+
     <p class="header-text container">Фотографии<br>пользователей</p>
   </header>
 
@@ -52,7 +59,8 @@
     <h1 class="visually-hidden">Новости наших пользователей</h1>
 
     <section class="users-news container">
-      <p class="catalog-text user-news__text">Взгляните на фотографии, которые выкладывают пользователи! <br>Видите, как
+      <p class="catalog-text users-news__text">Взгляните на фотографии, которые выкладывают пользователи! <br>Видите,
+        как
         не
         хватает
         ваших?</p>
@@ -60,8 +68,8 @@
         <li class="users-news__item users-news__item-panorama">
           <article class="news-item">
             <p class="users-news__day">Панорама дня</p>
-            <img class="news-item__img news-item__img-panorama" src="../img/catalog/panorama.jpg" width="320"
-              height="137" alt="Уходящий вдаль мост, внизу зелёный лес">
+            <img class="news-item__img news-item__img-panorama" src="img/catalog/panorama.jpg" width="320" height="137"
+              alt="Уходящий вдаль мост, внизу зелёный лес">
             <blockquote class="news-item__blockquote news-item__blockquote-panorama">
               <p>
                 <cite class="news-item__author-name">Анна</cite>
@@ -76,7 +84,7 @@
         </li>
         <li class="users-news__item">
           <article class="news-item">
-            <img class="news-item__img" src="../img/catalog/photo-1.jpg" width="280" height="180"
+            <img class="news-item__img" src="img/catalog/photo-1.jpg" width="280" height="180"
               alt="Видеокамера, напротив боком стоит белая машина на фоне чёрной стены ">
             <blockquote class="news-item__blockquote">
               <cite class="news-item__author-name">Левон</cite>
@@ -88,7 +96,7 @@
         </li>
         <li class="users-news__item">
           <article class="news-item">
-            <img class="news-item__img" src="../img/catalog/photo-2.jpg" width="280" height="180"
+            <img class="news-item__img" src="img/catalog/photo-2.jpg" width="280" height="180"
               alt="Барабанная установка">
             <blockquote class="news-item__blockquote">
               <cite class="news-item__author-name">Антон</cite>
@@ -100,7 +108,7 @@
         </li>
         <li class="users-news__item">
           <article class="news-item">
-            <img class="news-item__img" src="../img/catalog/photo-3.jpg" width="280" height="180"
+            <img class="news-item__img" src="img/catalog/photo-3.jpg" width="280" height="180"
               alt="Решётчатая стеклянная крыша. За ней видны крыши других зданий.">
             <blockquote class="news-item__blockquote">
               <cite class="news-item__author-name">Борис</cite>
@@ -112,7 +120,7 @@
         </li>
         <li class="users-news__item">
           <article class="news-item">
-            <img class="news-item__img" src="../img/catalog/photo-4.jpg" width="280" height="180"
+            <img class="news-item__img" src="img/catalog/photo-4.jpg" width="280" height="180"
               alt="Шатёр с овощами и фруктами. Вывеска Кубанская бахча">
             <blockquote class="news-item__blockquote">
               <cite class="news-item__author-name">Сергей</cite>
@@ -124,8 +132,7 @@
         </li>
         <li class="users-news__item">
           <article class="news-item">
-            <img class="news-item__img" src="../img/catalog/photo-5.jpg" width="280" height="180"
-              alt="Ночи на фоне гор">
+            <img class="news-item__img" src="img/catalog/photo-5.jpg" width="280" height="180" alt="Ночи на фоне гор">
             <blockquote class="news-item__blockquote">
               <cite class="news-item__author-name">Максим</cite>
               <time class="news-item__time" datetime="">(45 часов назад)</time>
@@ -136,7 +143,7 @@
         </li>
         <li class="users-news__item">
           <article class="news-item">
-            <img class="news-item__img" src="../img/catalog/photo-6.jpg" width="280" height="180"
+            <img class="news-item__img" src="img/catalog/photo-6.jpg" width="280" height="180"
               alt="Крыло самолёта во время полёта и яркое солнце">
             <blockquote class="news-item__blockquote">
               <cite class="news-item__author-name">Надежда</cite>
@@ -149,13 +156,13 @@
       </ul>
     </section>
 
-    <p class="catalog-text catalog__share-text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+    <p class="catalog-text catalog-text--share">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
 
-    <div class="share-new__wrapper">
+    <section class="share-new">
 
-      <section class="share-new container">
+      <div class="share-new__wrapper container">
 
-        <img class="share-new__image" src="../img/catalog/photo-7.jpg" width="280" height="374"
+        <img class="share-new__image" src="img/catalog/photo-7.jpg" width="280" height="374"
           alt="Зимняя дорога, уходящая вдаль. По краям деревья">
         <form class="share-new__form" action="#" method="get">
           <ul class="share-new__tools tools-list">
@@ -163,37 +170,33 @@
               <button class="tools-list__button" type="button">
                 <span class="visually-hidden">Обрезать</span>
               </button>
-              <input class="tools-scale tools-list__scale" type="range" min="1" max="100" value="50" class="slider"
-                id="myRange">
             </li>
             <li class="tools-list__item">
               <button class="tools-list__button" type="button">
                 <span class="visually-hidden">Заливка</span>
               </button>
-              <input class="tools-scale tools-list__scale" type="range" min="1" max="100" value="50" class="slider"
-                id="myRange">
             </li>
             <li class="tools-list__item">
               <button class="tools-list__button" type="button">
                 <span class="visually-hidden">Контраст</span>
               </button>
-              <input class="tools-scale tools-list__scale" type="range" min="1" max="100" value="50" class="slider"
-                id="myRange">
             </li>
           </ul>
-          <div class="tools-range">
-            <input class="tools-scale tools-range__scale" type="range" min="1" max="100" value="50" class="slider"
+          <div class="share-new__scale">
+            <input class=" tools-scale tools-scale__current" type="range" min="1" max="100" value="50" class="slider"
               id="myRange">
+            <input class="tools-scale" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            <input class="tools-scale" type="range" min="1" max="100" value="50" class="slider" id="myRange">
           </div>
-          <div class="tools-buttons">
-            <button class="tools-buttons--send button" type="submit">Запостить</button>
-            <button class="tools-buttons--reset button" type="reset">Отмена</button>
+          <div class="share-new__buttons tools-buttons">
+            <button class="button--send button" type="submit">Запостить</button>
+            <button class="button--reset button" type="reset">Отмена</button>
           </div>
         </form>
 
-      </section>
+      </div>
 
-    </div>
+    </section>
 
   </main>
   <footer class="page-footer">
@@ -228,6 +231,30 @@
     </div>
 
   </footer>
+
+  <script>
+    var navMainBox = document.querySelector('.main-nav__box');
+    var navMainList = document.querySelector('.main-nav__list');
+    var navMainToggle = document.querySelector('.main-nav__toggle');
+
+    navMainBox.classList.remove('main-nav__box--nojs');
+    navMainList.classList.remove('main-nav__list--nojs');
+    navMainToggle.classList.remove('main-nav__toggle--nojs');
+
+    navMainToggle.addEventListener('click', function () {
+      if (navMainList.classList.contains('main-nav__list--closed')) {
+        navMainList.classList.remove('main-nav__list--closed');
+        navMainList.classList.add('main-nav__list--opened');
+        navMainBox.classList.remove('main-nav__box--closed');
+        navMainBox.classList.add('main-nav__box--opened');
+      } else {
+        navMainList.classList.add('main-nav__list--closed');
+        navMainList.classList.remove('main-nav__list--opened');
+        navMainBox.classList.add('main-nav__box--closed');
+        navMainBox.classList.remove('main-nav__box--opened');
+      }
+    });
+  </script>
 
 </body>
 

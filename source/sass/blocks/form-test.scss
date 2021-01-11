@@ -1,17 +1,21 @@
 .form-test {
-  @include form-drop;
+  padding-top: 42px;
+  background-color: $gray-basic;
 
   @media (min-width: $tablet-width) {
-    @include border-form;
+    padding-top: 61px;
+    background-color: $white;
+    grid-area: test;
   }
 }
 
 .form-test__wrapper {
-  grid-area: test;
-  background-color: $gray-basic;
+  @include form-drop;
+  padding-top: 21px;
 
   @media (min-width: $tablet-width) {
-    background-color: $white;
+    @include border-form;
+    padding: 28px 58px 5px;
   }
 }
 
@@ -28,13 +32,37 @@
 }
 
 .form-test__item {
-  padding-bottom: 45px;
+  padding-bottom: 50px;
+
+  &:last-child {
+    padding-bottom: 45px;
+  }
 }
 
 .form-test__input {
+  position: fixed;
+}
+
+.form-test__input + label::before {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  content: "";
+  width: 35px;
+  height: 35px;
+  background-color: $white;
+  border: 2px solid $gray-special;
+  border-radius: 1px;
+}
+
+.form-test__input:checked + label::before {
+  background-image: url("../../img/form/forn-img-yes.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .form-test__label {
+  position: relative;
   font-size: 18px;
-  padding-left: 60px;
+  padding-left: 59px;
 }

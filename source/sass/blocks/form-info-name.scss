@@ -1,10 +1,8 @@
 .form-info-name {
-}
-
-.form-info-name__wrapper {
-  grid-area: name;
+  @include form-drop;
 
   @media (min-width: $desktop-width) {
+    grid-area: name;
     padding-right: 0;
     margin-right: 0;
     width: 100%;
@@ -12,10 +10,24 @@
   }
 }
 
-.form-info-name__item {
+.form-info-name__wrapper {
+  padding-top: 13px;
+  padding-bottom: 32px;
+
   @media (min-width: $tablet-width) {
+    padding-bottom: 7px;
+  }
+}
+
+.form-info-name__item {
+  margin: 0;
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
     display: flex;
     align-items: center;
+    margin-bottom: 53px;
   }
 }
 

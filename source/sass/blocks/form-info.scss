@@ -1,22 +1,27 @@
 .form-info {
-  @include form-drop;
 }
 
 .form-info__label {
+  display: inline-block;
   text-transform: uppercase;
   color: $red-basic;
-  padding: 23px 23px 23px 0;
+  padding: 8px 23px 7px 23px;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 19px 7px 0px;
+  }
 }
 
 .form-info__input {
   @include border-form;
 
   box-sizing: border-box;
-  height: 60px;
+  height: 62px;
   width: 100%;
   font-size: 18px;
-  padding-left: 23px;
+  line-height: 30px;
+  padding-left: 20px;
 
   &::placeholder {
     color: $black-special;

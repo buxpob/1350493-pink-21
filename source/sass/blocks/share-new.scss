@@ -1,8 +1,8 @@
-.share-new__wrapper {
+.share-new {
   background-color: $gray-basic;
 }
 
-.share-new {
+.share-new__wrapper {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -15,7 +15,24 @@
 }
 
 .share-new__form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: 1fr min-content;
+    grid-template-areas:
+      "tools scale"
+      "buttons buttons";
+  }
 }
 
 .share-new__tools {
+  grid-area: tools;
+}
+
+.share-new__scale {
+  grid-area: scale;
+}
+
+.share-new__buttons {
+  grid-area: buttons;
 }

@@ -1,4 +1,10 @@
 .main-nav {
+  background-color: $black-opacity;
+}
+
+.main-nav__wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -7,46 +13,165 @@
     display: grid;
     grid-template-columns: 145px 1fr;
     gap: 10%;
+    padding-right: 80px;
+  }
+
+  @media (min-width: $max-desktop-width) {
     padding-right: 120px;
   }
 }
 
-.main-nav__wrapper {
-  background-color: $black-opacity;
-}
-
 .main-nav__box {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  min-height: 66px;
-  margin-bottom: 23px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+
+  &--opened {
+    background-color: $black-special;
+    border-bottom: 1px solid $black;
+  }
+
+  &--nojs {
+    background-color: $black-special;
+    border-bottom: 1px solid $black;
+  }
 
   @media (min-width: $tablet-width) {
-    min-height: 110px;
+    padding-top: 22px;
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
   }
 }
 
 .main-nav__logo {
-  margin-right: 30px;
+  width: 74px;
+  height: 23px;
+
+  @media (min-width: $tablet-width) {
+    width: 145px;
+    height: auto;
+  }
 }
 
 .main-nav__toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 24px;
+  display: block;
+
+  &--nojs {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 38px;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
 }
 
+.main-nav__box--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: $white;
+  box-shadow: 0 10px 0 0 $white, 0 21px 0 0$white;
+}
+
+.main-nav__box--closed .main-nav__toggle:hover::before,
+.main-nav__box--closed .main-nav__toggle:focus::before {
+  background-color: $red-basic;
+  box-shadow: 0 10px 0 0 $red-basic, 0 21px 0 0 $red-basic;
+}
+
+.main-nav__box--closed .main-nav__toggle:focus::before {
+  background-color: $red-opacity;
+  box-shadow: 0 10px 0 0 $red-opacity, 0 21px 0 0 $red-opacity;
+}
+
+.main-nav__box--opened .main-nav__toggle {
+  top: 23px;
+  right: 15px;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 38px;
+  }
+}
+
+.main-nav__box--opened .main-nav__toggle:hover::before,
+.main-nav__box--opened .main-nav__toggle:focus::before,
+.main-nav__box--opened .main-nav__toggle:hover::after,
+.main-nav__box--opened .main-nav__toggle:focus::after {
+  background-color: $red-basic;
+}
+
+.main-nav__box--opened .main-nav__toggle:active::before,
+.main-nav__box--opened .main-nav__toggle:active::after {
+  background-color: $red-opacity;
+}
+
 .main-nav__list {
   @include list-drop;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+
+  &--nojs {
+    display: block;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
 
 .main-nav__item {
+  &:nth-last-child(1) a {
+    @media (min-width: $desktop-width) {
+      padding-right: 11px;
+    }
+  }
 }
 
 .main-nav__link {
@@ -58,14 +183,24 @@
   text-transform: uppercase;
   width: 100%;
   background-color: $black-special;
+  border-bottom: 1px solid $black;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   text-align: center;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  @include item-interaction;
 
   @media (min-width: $desktop-width) {
     font-weight: normal;
-    font-size: 18px;
     line-height: 18px;
     text-transform: none;
-    padding: 10px 10px;
+    padding: 8px 25px;
+    margin-bottom: 7px;
     background-color: transparent;
+    border: none;
+  }
+
+  @media (min-width: $max-desktop-width) {
+    padding: 8px 40px;
   }
 }

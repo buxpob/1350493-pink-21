@@ -1,14 +1,28 @@
 .copyright {
+  min-width: 130px;
   display: flex;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    margin-right: 0;
+    margin-left: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 12px;
+    margin-top: -2px;
   }
 }
+
 .copyright__text {
   line-height: 18px;
+  margin-right: 14px;
   color: $black-special;
-}
-.copyright__image {
+
+  @media (min-width: $tablet-width) {
+    margin-top: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
