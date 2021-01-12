@@ -5,17 +5,26 @@
     grid-area: name;
     padding-right: 0;
     margin-right: 0;
+    margin-left: auto;
     width: 100%;
-    max-width: 570px;
+    max-width: 590px;
   }
 }
 
 .form-info-name__wrapper {
   padding-top: 13px;
-  padding-bottom: 32px;
+  padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 28px 0px 20px 80px;
+  }
+
+  @media (min-width: $max-desktop-width) {
+    padding: 27px 25px 0 129px;
   }
 }
 
@@ -24,10 +33,18 @@
   margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 55px;
     display: flex;
     align-items: center;
     margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-bottom: 54px;
+
+    &:last-child {
+      margin-bottom: 39px;
+    }
   }
 }
 

@@ -43,10 +43,24 @@
   @media (min-width: $desktop-width) {
     background-image: url("../img/header/bg-header-desktop.jpg");
     background-size: cover;
-    min-height: 394px;
+    min-height: 388px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/header/bg-header-desktop@2x.jpg");
+    }
+
+    &--form,
+    &--catalog {
+      background-position: bottom -260px right 50%;
+      background-size: 100% auto;
+      padding-bottom: 50px;
+    }
+  }
+
+  @media (min-width: $max-desktop-width) {
+    &--form,
+    &--catalog {
+      background-position: bottom -460px right 50%;
     }
   }
 }

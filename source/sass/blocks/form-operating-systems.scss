@@ -8,6 +8,17 @@
     padding-top: 0;
     margin-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 13px 80px 0 22px;
+  }
+
+  @media (min-width: $max-desktop-width) {
+    padding: 0;
+    margin: 14px 130px 0 22px;
+    max-width: 438px;
+  }
 }
 
 .form-operating-systems__wrapper {
@@ -20,10 +31,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
     margin-left: 0;
     width: 100%;
-    max-width: 570px;
+    padding: 11px 20px 15px;
+  }
+
+  @media (min-width: $max-desktop-width) {
+    padding: 11px 0 15px 0;
   }
 }
 
@@ -31,6 +45,10 @@
   @include list-drop;
 
   @media (min-width: $tablet-width) {
+  }
+
+  @media (min-width: $max-desktop-width) {
+    padding-left: 74px;
   }
 }
 

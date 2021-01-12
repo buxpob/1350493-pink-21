@@ -18,7 +18,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    gap: 60px;
+    gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "name systems"
@@ -42,7 +42,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 72%;
+    margin-top: 91px;
+    width: 85%;
   }
 }
 
@@ -55,7 +56,7 @@
 }
 
 .form__legend {
-  padding: 0 30px;
+  padding: 0 20px;
   line-height: 18px;
   color: $form-legend-color;
   text-transform: uppercase;
