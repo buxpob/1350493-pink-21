@@ -34,11 +34,18 @@
 }
 
 .download-app__button {
+  @include item-interaction;
+
   background-color: $black-basic;
   border-color: $white;
   color: $white;
   width: 100%;
   margin-bottom: 20px;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+  }
 
   @media (min-width: $middle-width) {
     background-color: transparent;

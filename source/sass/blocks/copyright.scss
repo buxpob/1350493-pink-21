@@ -8,14 +8,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 12px;
     margin-top: -2px;
   }
 }
 
 .copyright__text {
   line-height: 18px;
-  margin-right: 14px;
+  margin-right: 16px;
   color: $black-special;
 
   @media (min-width: $tablet-width) {
@@ -24,5 +23,22 @@
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
+  }
+}
+
+.copyright__image {
+  margin-top: 5px;
+
+  &:hover path,
+  &:hover path {
+    fill: $black;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 12px;
   }
 }

@@ -10,6 +10,8 @@
 }
 
 .tariffs__wrapper {
+  position: relative;
+  min-height: 438px;
   padding-top: 135px;
   padding-bottom: 20px;
   overflow: hidden;
@@ -17,7 +19,9 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 107px 20px 67px;
+    position: static;
+    min-height: auto;
+    padding: 107px 20px 65px;
     margin: 0;
   }
 
@@ -32,10 +36,17 @@
 }
 
 .tariffs__table {
+  position: absolute;
+  left: calc(-100vw + 60px);
   margin-left: -2px;
 
   @media (min-width: $tablet-width) {
+    position: static;
     width: 100%;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
   }
 }
 
@@ -54,9 +65,9 @@
 
 .tariffs__table .tariffs__row {
   display: grid;
-  grid-template-columns: 100vw 100vw 100vw;
+  grid-template-columns: repeat(3, calc(100vw - 40px));
   margin: 0 auto;
-  background-color: $white;
+  background-color: $gray-basic;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -69,37 +80,61 @@
   }
 }
 
+.tariffs__row th:last-child {
+  border-right: none;
+}
+
+.tariffs__row th:nth-child(2) {
+  border-left: none;
+}
+
 .tariffs__title {
+  border-right: 1px solid $white;
+  border-left: 1px solid $white;
   background-color: $black-special;
   color: $white;
   font-weight: bold;
   font-size: 16px;
   text-transform: uppercase;
   border-radius: 1px 0px 0px 0px;
+  min-width: calc(100vw - 40px);
 
   @media (min-width: $tablet-width) {
-    border-right: 2px solid $white;
+    min-width: auto;
   }
 }
 
-.tariffs__row th:nth-child(4) {
-  border: none;
-}
-
 .tariffs__box {
-  position: relative;
+  margin-left: -3px;
+  margin-top: -1px;
   overflow: hidden;
-  margin: -2px 20px 0;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
+
+  &--hit {
+    background-image: url("../../img/Index/img-hit-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 
   @media (min-width: $tablet-width) {
-    padding-top: 3px;
-    padding-bottom: 8px;
+    margin: 0;
+    padding-top: 0px;
+    padding-bottom: 10px;
+
+    &--hit {
+      background-image: url("../../img/Index/img-hit-tablet.svg");
+      background-position: -2px 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 5px;
     padding-bottom: 20px;
+
+    &--hit {
+      background-image: url("../../img/Index/img-hit-mobile.svg");
+      background-position: -2px 0;
+    }
   }
 }
 
@@ -113,18 +148,6 @@
     line-height: 30px;
     font-size: 18px;
   }
-}
-
-.tariffs__hit {
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 24px;
-  position: absolute;
-  top: 2px;
-  left: -50px;
-  width: 150px;
-  background-color: $red-basic;
-  transform: rotate(-45deg);
 }
 
 .tariffs__price {
@@ -141,6 +164,7 @@
 
 .tariffs__option {
   display: none;
+
   &--transparent {
     background-color: $gray-basic;
     height: 100%;
@@ -151,12 +175,21 @@
     margin: auto 0;
     padding-left: 15px;
     padding-top: 7px;
+    background-color: $white;
+
+    &--transparent {
+      background-color: $gray-basic;
+    }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
-    padding-left: 20px;
-    padding-top: 14px;
+    padding-left: 18px;
+    padding-top: 13px;
+
+    &--transparent {
+      background-color: $gray-basic;
+    }
   }
 }
 
@@ -165,7 +198,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 42px 15px;
+  padding: 14px 20px 15px;
   background: $white;
 
   @media (min-width: $tablet-width) {
