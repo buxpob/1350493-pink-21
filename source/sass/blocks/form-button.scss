@@ -7,6 +7,20 @@
   color: $white;
   border: none;
   border-radius: 1px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $form-button-color--hover;
+  }
+
+  &:active {
+    color: $white-opacity;
+  }
+
+  &:disabled {
+    background-color: $gray-special;
+  }
 }
 
 .form-button--send {

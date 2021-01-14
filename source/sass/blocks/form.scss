@@ -2,6 +2,15 @@
   color: $black-special;
 }
 
+.form input {
+  @include input-interaction;
+  cursor: pointer;
+}
+
+.form label {
+  cursor: pointer;
+}
+
 .form__box {
   padding-bottom: 7px;
 
@@ -18,7 +27,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    gap: 60px;
+    gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "name systems"
@@ -42,7 +51,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 72%;
+    margin-top: 91px;
+    width: 85%;
   }
 }
 
@@ -55,9 +65,9 @@
 }
 
 .form__legend {
-  padding: 0 30px;
+  padding: 0 20px;
   line-height: 18px;
-  color: $form-legend-color;
+  color: $red-basic;
   text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
@@ -97,6 +107,16 @@
 
 .form__warning-text {
   color: $red-basic;
+
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--desktop {
+      display: inline-block;
+    }
+  }
 }
 
 .form__footer {
@@ -110,6 +130,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 45px;
+    margin-bottom: 10px;
     width: 100%;
     max-width: 1200px;
   }

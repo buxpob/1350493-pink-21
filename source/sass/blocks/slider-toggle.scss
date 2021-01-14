@@ -40,3 +40,17 @@
     opacity: 1;
   }
 }
+
+.slider-toggle__button:hover::before,
+.slider-toggle__button:focus::before {
+  opacity: 0.6;
+}
+
+.slider-toggle__button:active::before {
+  opacity: 0.1;
+}
+
+.slider-toggle__button--current:hover::before,
+.slider-toggle__button--current:focus::before {
+  opacity: 1;
+}

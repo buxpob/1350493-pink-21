@@ -5,7 +5,7 @@
   display: inline-block;
   text-transform: uppercase;
   color: $red-basic;
-  padding: 8px 23px 7px 23px;
+  padding: 8px 23px 6px 23px;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -17,7 +17,7 @@
   @include border-form;
 
   box-sizing: border-box;
-  height: 62px;
+  min-height: 62px;
   width: 100%;
   font-size: 18px;
   line-height: 30px;

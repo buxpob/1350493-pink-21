@@ -3,9 +3,14 @@
   background-color: $gray-basic;
 
   @media (min-width: $tablet-width) {
-    padding-top: 61px;
+    padding-top: 60px;
     background-color: $white;
     grid-area: test;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 36px;
+    min-width: 230px;
   }
 }
 
@@ -17,6 +22,9 @@
     @include border-form;
     padding: 28px 58px 5px;
   }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .form-test__list {
@@ -26,8 +34,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-left: 90px;
-    padding-right: 90px;
+    padding: 0;
+    margin-right: -50px;
   }
 }
 
@@ -36,6 +44,40 @@
 
   &:last-child {
     padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 10px;
+    width: 45%;
+  }
+
+  @media (min-width: $max-desktop-width) {
+    width: 30%;
+    margin-right: 10px;
+
+    &--two {
+      order: 4;
+    }
+
+    &--three {
+      order: 2;
+      margin-left: 15px;
+    }
+
+    &--for {
+      order: 5;
+      margin-left: 15px;
+    }
+
+    &--five {
+      order: 3;
+      margin-right: 0px;
+    }
+
+    &--six {
+      order: 6;
+      margin-right: 0px;
+    }
   }
 }
 
@@ -61,8 +103,25 @@
   background-position: 50% 50%;
 }
 
+.form-test__input:hover + label::before,
+.form-test__input:focus + label::before {
+  border-color: $black-special;
+}
+
+.form-test__input:active + label::before {
+  border-color: $red-basic;
+}
+
 .form-test__label {
   position: relative;
   font-size: 18px;
   padding-left: 59px;
+}
+
+.form-test__label:hover::before {
+  border-color: $black-special;
+}
+
+.form-test__label:active::before {
+  border-color: $red-basic;
 }

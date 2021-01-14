@@ -74,7 +74,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: 38px;
+    top: 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -167,8 +167,17 @@
 }
 
 .main-nav__item {
-  &:nth-last-child(1) a {
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
+    padding: 0 24px;
+
+    &:last-child {
+    }
+  }
+
+  @media (min-width: $max-desktop-width) {
+    padding: 0 40px;
+
+    &:last-child {
       padding-right: 11px;
     }
   }
@@ -186,21 +195,21 @@
   border-bottom: 1px solid $black;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   text-align: center;
-  padding-top: 14px;
-  padding-bottom: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   @include item-interaction;
 
   @media (min-width: $desktop-width) {
     font-weight: normal;
     line-height: 18px;
     text-transform: none;
-    padding: 8px 25px;
-    margin-bottom: 7px;
+    margin-bottom: 9px;
+    padding-bottom: 12px;
     background-color: transparent;
     border: none;
-  }
 
-  @media (min-width: $max-desktop-width) {
-    padding: 8px 40px;
+    &--current {
+      border-bottom: 2px solid $white;
+    }
   }
 }
