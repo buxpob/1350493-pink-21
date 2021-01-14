@@ -62,13 +62,13 @@
 
 .form-operating-systems__input + label::before {
   position: absolute;
-  left: 1px;
-  top: -7px;
+  left: 0;
+  top: -8px;
   content: "";
   width: 37px;
   height: 37px;
   background-color: $white;
-  border: 1px solid $gray-special;
+  border: 2px solid $gray-special;
   border-radius: 50%;
 }
 
@@ -83,6 +83,10 @@
   border-radius: 50%;
 }
 
+.form-operating-systems__input:focus + label::before {
+  border-color: $black-special;
+}
+
 .form-operating-systems__label {
   position: relative;
   font-size: 18px;
@@ -91,4 +95,13 @@
   @media (min-width: $tablet-width) {
     padding-left: 61px;
   }
+}
+
+.form-operating-systems__label:hover::before,
+.form-operating-systems__label:focus::before {
+  border-color: $black-special;
+}
+
+.form-operating-systems__label:active::before {
+  border-color: $red-basic;
 }

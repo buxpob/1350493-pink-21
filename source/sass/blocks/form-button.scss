@@ -3,10 +3,24 @@
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  background-color: $green-basic;
+  background-color: $form-button-color;
   color: $white;
   border: none;
   border-radius: 1px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $form-button-color--hover;
+  }
+
+  &:active {
+    color: $white-opacity;
+  }
+
+  &:disabled {
+    background-color: $gray-special;
+  }
 }
 
 .form-button--send {

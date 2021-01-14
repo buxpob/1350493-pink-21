@@ -2,6 +2,15 @@
   color: $black-special;
 }
 
+.form input {
+  @include input-interaction;
+  cursor: pointer;
+}
+
+.form label {
+  cursor: pointer;
+}
+
 .form__box {
   padding-bottom: 7px;
 
@@ -98,6 +107,16 @@
 
 .form__warning-text {
   color: $red-basic;
+
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--desktop {
+      display: inline-block;
+    }
+  }
 }
 
 .form__footer {
@@ -111,6 +130,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 45px;
+    margin-bottom: 10px;
     width: 100%;
     max-width: 1200px;
   }

@@ -1,11 +1,17 @@
 .tariffs {
-  background-image: url("../img/Index/bg-tariffs-tablet.svg");
+  background-image: url("../img/Index/bg-tariffs-mobile.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 10px;
 
   @media (min-width: $tablet-width) {
+    background-image: url("../img/Index/bg-tariffs-tablet.svg");
     background-position: center -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/Index/bg-tariffs-desktop.svg");
+    background-position: center 4px;
   }
 }
 

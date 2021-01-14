@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 59px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 39px;
+  }
 }
 
 .form-comment__wrapper {
@@ -15,6 +19,10 @@
   @media (min-width: $tablet-width) {
     @include border-form;
     padding: 21px 59px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 57px 35px;
   }
 }
 
@@ -41,6 +49,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 125px;
+    min-height: 126px;
   }
 }

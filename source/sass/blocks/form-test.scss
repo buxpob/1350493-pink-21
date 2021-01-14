@@ -8,7 +8,7 @@
     grid-area: test;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 36px;
     min-width: 230px;
   }
@@ -103,8 +103,25 @@
   background-position: 50% 50%;
 }
 
+.form-test__input:hover + label::before,
+.form-test__input:focus + label::before {
+  border-color: $black-special;
+}
+
+.form-test__input:active + label::before {
+  border-color: $red-basic;
+}
+
 .form-test__label {
   position: relative;
   font-size: 18px;
   padding-left: 59px;
+}
+
+.form-test__label:hover::before {
+  border-color: $black-special;
+}
+
+.form-test__label:active::before {
+  border-color: $red-basic;
 }

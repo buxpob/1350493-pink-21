@@ -24,6 +24,18 @@
   margin-top: 30px;
   background-color: transparent;
   border: none;
+  color: $black-special;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 
   @media (min-width: $desktop-width) {
     display: block;

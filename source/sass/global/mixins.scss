@@ -24,3 +24,14 @@
     color: $red-opacity;
   }
 }
+
+@mixin input-interaction {
+  &:hover,
+  &:focus {
+    border-color: $black-special;
+  }
+
+  &:active {
+    border-color: $red-basic;
+  }
+}
