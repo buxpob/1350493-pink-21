@@ -27,19 +27,8 @@ img {
   border-radius: 30px;
   border: 3px solid $red-basic;
   padding-top: 16px;
-  padding-bottom: 17px;
+  padding-bottom: 16px;
   width: 100%;
-
-  &--send {
-    color: $red-basic;
-    border-color: $red-basic;
-  }
-
-  &--reset {
-    border-color: $black-special;
-    color: $black-special;
-    opacity: 0.1;
-  }
 }
 
 a {

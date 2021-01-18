@@ -22,17 +22,25 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 2px;
-    padding-bottom: 80px;
+    padding-top: 3px;
+    padding-bottom: 60px;
   }
 }
 
 .page-footer__info {
   margin: 30px auto 0;
 
+  &--catalog {
+    margin-top: 36px;
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: min-content 1fr min-content;
+
+    &--catalog {
+      margin-top: 31px;
+    }
   }
 }
 

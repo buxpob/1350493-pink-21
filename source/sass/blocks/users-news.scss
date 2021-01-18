@@ -1,4 +1,15 @@
 .users-news {
+  padding-top: 44px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 91px;
+    margin-bottom: 5px;
+  }
 }
 
 .users-news__text {
@@ -26,15 +37,23 @@
 
 .users-news__list {
   @include list-drop;
+  margin-top: 50px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 75px;
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 86px;
   }
 }
 
 .users-news__item {
+  min-height: 301px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -42,9 +61,24 @@
 
   @media (min-width: $tablet-width) {
     width: 48%;
+    min-width: 300px;
+    margin-bottom: 20px;
+
+    &-panorama {
+      margin-bottom: 51px;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    width: 48%;
+    margin-bottom: 53px;
+
+    &-panorama {
+      margin-bottom: 51px;
+    }
+  }
+
+  @media (min-width: $max-desktop-width) {
     width: 30%;
   }
 }
@@ -64,7 +98,7 @@
   text-transform: uppercase;
   color: $white;
   background-color: $red-basic;
-  padding: 10px 20px;
+  padding: 6px 20px 6px;
 
   @media (min-width: $tablet-width) {
     top: 57px;
