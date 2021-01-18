@@ -31,21 +31,21 @@
     }
 
     &--crop::after {
-      background-image: url("../../img/catalog/tablet-crop.svg");
+      background-image: url("../img/catalog/tablet-crop.svg");
       background-repeat: no-repeat;
       background-size: 22px 22px;
       background-position: 4px 4px;
     }
 
     &--fill::after {
-      background-image: url("../../img/catalog/tablet-fill.svg");
+      background-image: url("../img/catalog/tablet-fill.svg");
       background-repeat: no-repeat;
       background-size: 24px 22px;
       background-position: 4px 7px;
     }
 
     &--contrast::after {
-      background-image: url("../../img/catalog/tablet-contrast.svg");
+      background-image: url("../img/catalog/tablet-contrast.svg");
       background-repeat: no-repeat;
       background-size: 16px 16px;
       background-position: 7px 8px;

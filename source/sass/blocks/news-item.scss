@@ -13,7 +13,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 300px;
+    &-share {
+      width: 300px;
+    }
   }
 }
 
