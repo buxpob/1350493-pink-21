@@ -39,8 +39,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 23px;
-    padding-bottom: 31px;
+    padding-top: 21px;
+    padding-bottom: 43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,9 +52,49 @@
   width: 74px;
   height: 23px;
 
+  &:hover path,
+  &:focus path {
+    fill: $red-basic;
+  }
+
+  &:active path {
+    fill: $white;
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     width: 145px;
-    height: auto;
+    height: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 147px;
+  }
+}
+
+.main-nav__logo-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__logo-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__logo-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 

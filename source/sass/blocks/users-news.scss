@@ -59,13 +59,18 @@
   position: relative;
   margin-bottom: 20px;
 
+  &--panorama {
+    width: 100%;
+  }
+
   @media (min-width: $tablet-width) {
     width: 48%;
     min-width: 300px;
     margin-bottom: 20px;
 
-    &-panorama {
+    &--panorama {
       margin-bottom: 51px;
+      width: 100%;
     }
   }
 
@@ -73,18 +78,19 @@
     width: 48%;
     margin-bottom: 53px;
 
-    &-panorama {
+    &--panorama {
       margin-bottom: 51px;
+      width: 100%;
     }
   }
 
   @media (min-width: $max-desktop-width) {
     width: 30%;
-  }
-}
 
-.users-news__item-panorama {
-  width: 100%;
+    &--panorama {
+      width: 100%;
+    }
+  }
 }
 
 .users-news__day {

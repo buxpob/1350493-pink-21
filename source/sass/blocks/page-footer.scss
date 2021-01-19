@@ -50,6 +50,19 @@
   display: block;
   margin: 0 auto;
 
+  &:hover path,
+  &:focus path {
+    fill: $red-basic;
+  }
+
+  &:active .page-footer__logo-pink path {
+    fill: $black-special;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     margin-left: 0;
   }
@@ -59,6 +72,20 @@
   }
 }
 
+.page-footer__logo-mobile {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer__logo-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+/////////////
 .page-footer__social {
 }
 
