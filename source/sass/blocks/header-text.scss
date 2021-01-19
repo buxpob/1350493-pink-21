@@ -34,13 +34,14 @@
   }
 }
 
-.header-text--form {
+.header-text--form,
+.header-text--catalog {
   font-size: 24px;
   line-height: 33px;
-  margin-top: 26px;
+  margin-top: 28px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 68px;
+    margin-top: 69px;
     font-size: 50px;
     line-height: 68px;
   }

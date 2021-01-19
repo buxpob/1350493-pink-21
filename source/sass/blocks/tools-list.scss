@@ -10,6 +10,12 @@
 }
 
 .tools-list__item {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 8px;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
@@ -17,6 +23,34 @@
 }
 
 .tools-list__button {
+  width: 50px;
+  height: 44px;
+  border: none;
+  background-color: transparent;
+
+  & path {
+    fill: $black-special;
+    opacity: 0.3;
+  }
+
+  &:hover path,
+  &:focus path {
+    opacity: 0.5;
+  }
+
+  &--active path {
+    fill: $red-basic;
+    opacity: 1;
+  }
+
+  &--active:hover path,
+  &--active:focus path {
+    opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .tools-list__scale {

@@ -5,3 +5,52 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+.tools-buttons__send {
+  color: $red-basic;
+  border-color: $red-basic;
+  margin-bottom: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: $red-basic;
+    color: $white;
+  }
+
+  &:active {
+    color: $white-opacity;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 183px;
+  }
+}
+
+.tools-buttons__reset {
+  border-color: $black-special;
+  color: $black-special;
+  opacity: 0.1;
+
+  &:hover,
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: $black-special;
+    color: $white-opacity;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+    margin-right: 0;
+    margin-left: auto;
+  }
+}

@@ -1,13 +1,126 @@
-.tools-scale {
-  min-width: 240px;
-  display: none;
-  margin: auto;
+.tools-scale__item {
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    margin-bottom: 69px;
+    padding-left: 50px;
+    padding-right: 30px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 35px;
+      left: -3px;
+      height: 1px;
+      width: 100%;
+      background-color: $black-special;
+      opacity: 0.1;
+    }
+
+    &:first-child {
+      margin-top: 20px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -15px;
+      left: -4px;
+      height: 30px;
+      width: 30px;
+    }
+
+    &--crop::after {
+      background-image: url("../img/catalog/tablet-crop.svg");
+      background-repeat: no-repeat;
+      background-size: 22px 22px;
+      background-position: 4px 4px;
+    }
+
+    &--fill::after {
+      background-image: url("../img/catalog/tablet-fill.svg");
+      background-repeat: no-repeat;
+      background-size: 24px 22px;
+      background-position: 4px 7px;
+    }
+
+    &--contrast::after {
+      background-image: url("../img/catalog/tablet-contrast.svg");
+      background-repeat: no-repeat;
+      background-size: 16px 16px;
+      background-position: 7px 8px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 50px 0 80px;
+
+      &::after {
+        top: -25px;
+        left: -14px;
+        height: 50px;
+        width: 50px;
+      }
+
+      &--crop::after {
+        background-size: 44px 44px;
+        background-position: 4px 3px;
+      }
+
+      &--fill::after {
+        background-size: 48px 43px;
+        background-position: 4px 5px;
+      }
+
+      &--contrast::after {
+        background-size: 32px 32px;
+        background-position: 9px 9px;
+      }
+    }
   }
 }
 
-.tools-scale__current {
-  display: block;
+.tools-scale__range {
+  appearance: none;
+  width: 100%;
+  height: 2px;
+  background-color: $black;
+  display: none;
+  margin: auto;
+
+  &--active {
+    display: block;
+  }
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    background-color: $white;
+    border: 2px solid $red-basic;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:active {
+      background-color: $red-basic;
+    }
+  }
+
+  &::-moz-range-thumb {
+    background-color: $white;
+    border: 2px solid $red-basic;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:active {
+      background-color: $red-basic;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    min-width: 202px;
+    max-width: 100%;
+  }
 }

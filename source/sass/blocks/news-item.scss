@@ -1,15 +1,30 @@
 .news-item {
   background-color: $gray-basic;
+  height: 100%;
 }
 
 .news-item__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    min-width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--share {
+      width: 300px;
+    }
+  }
 }
 
-.news-item__img-panorama {
+.news-item__img--panorama {
   display: block;
   width: 100vw;
   max-width: none;
   height: auto;
+  min-height: 137px;
   position: relative;
   top: 0;
   left: calc(-50vw + 50%);
@@ -17,46 +32,134 @@
 
 .news-item__blockquote {
   @include list-drop;
+  padding: 4px 10px 18px 17px;
 
-  &-panorama {
-    @media (min-width: $tablet-width) {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+  &--panorama {
+    padding-top: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 11px 10px 10px 30px;
+    min-height: 145px;
+
+    &--panorama {
+      padding-top: 20px;
+      min-height: 121px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 10px 10px 25px;
+
+    &--panorama {
+      padding-top: 22px;
+      min-height: 98px;
     }
   }
 }
 
+.new-item__info {
+  margin: 0;
+  margin-right: auto;
+}
+
 .news-item__author-name {
+  display: inline-block;
   font-style: normal;
+  vertical-align: center;
   font-weight: bold;
   line-height: 24px;
 }
+
 .news-item__time {
+  display: inline-block;
+  vertical-align: center;
   font-weight: 300;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+
+    &--panorama {
+      margin-left: 0;
+    }
+  }
 }
 
 .news-item__text {
+  margin: 0;
+  margin-bottom: 12px;
+  margin-top: -3px;
   line-height: 24px;
   width: 100%;
 
-  &-panorama {
+  &--panorama {
     order: 3;
+    margin-top: -2px;
+    margin-bottom: 11px;
+  }
+
+  @media (min-width: $tablet-width) {
   }
 }
 
 .news-item__like {
   margin: 0;
+  margin-top: 10px;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
   color: $red-basic;
   align-self: bottom;
 
-  &-panorama {
+  &--panorama {
     order: 2;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &--panorama {
+      margin-right: 0;
+      margin-left: auto;
+      margin-top: -24px;
+      margin-bottom: 0;
+      width: auto;
+    }
+  }
+}
+
+.news-item__like-text {
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    margin-right: 17px;
+  }
+}
+
+.news-item__button-like {
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-image: url("../img/catalog/img-like.svg");
+  background-repeat: no-repeat;
+  background-position: 0 4px;
+  background-size: 13px 12px;
+  margin-right: 12px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 16px;
+    order: 1;
   }
 }

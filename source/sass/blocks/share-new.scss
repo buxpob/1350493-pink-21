@@ -1,20 +1,46 @@
 .share-new {
+  margin-top: 42px;
   background-color: $gray-basic;
+
+  @media (min-width: $max-desktop-width) {
+    background-color: $white;
+  }
 }
 
 .share-new__wrapper {
+  padding-top: 20px;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 8%;
+    gap: 3%;
+    padding-top: 56px;
+    padding-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 40px 45px 80px;
+    margin-bottom: 65px;
+    max-width: 940px;
+  }
+
+  @media (min-width: $max-desktop-width) {
+    background-color: $gray-basic;
   }
 }
 
 .share-new__image {
   margin: 0 auto;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -5px;
+  }
 }
 
 .share-new__form {
+  padding-top: 32px;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: min-content 1fr;
@@ -22,17 +48,62 @@
     grid-template-areas:
       "tools scale"
       "buttons buttons";
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 450px;
   }
 }
 
 .share-new__tools {
   grid-area: tools;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .share-new__scale {
+  position: relative;
+  @include list-drop;
   grid-area: scale;
+  margin-top: 28px;
+  margin-bottom: 34px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 36px;
+    left: -20px;
+    height: 1px;
+    width: 100vw;
+    background-color: $black-special;
+    opacity: 0.1;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -2px;
+  }
 }
 
 .share-new__buttons {
   grid-area: buttons;
+  padding-top: 39px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 13px 40px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 20px 10px 20px;
+  }
 }

@@ -4,7 +4,7 @@
   min-height: 238px;
   background-image: url("../img/header/bg-header-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: bottom 270px right 50%;
+  background-position: bottom 272px right 50%;
   background-size: 100% auto;
   background-color: $black-basic;
 
@@ -43,7 +43,7 @@
   @media (min-width: $desktop-width) {
     background-image: url("../img/header/bg-header-desktop.jpg");
     background-size: cover;
-    min-height: 388px;
+    min-height: 390px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/header/bg-header-desktop@2x.jpg");
