@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/blocks/main-header.scss"
+    ],
+    "names": [],
+    "file": "main-header.css"
+}
