@@ -14,6 +14,19 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
 
+//Css
+
+const css = (done) => {
+  gulp.src("source/css/style.css"),
+    {
+      base: "source"
+    }
+      .pipe(gulp.dest("build/css"))
+  done();
+}
+
+exports.css = css;
+
 // Styles
 
 const styles = () => {
@@ -21,6 +34,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .pipe(gulp.dest("build"))
     .pipe(postcss([
       autoprefixer(),
       csso()
@@ -95,6 +109,7 @@ const copy = (done) => {
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
     "source/img/**/*.{jpg,png,svg}",
+    "source/css/style.css",
   ], {
     base: "source"
   })
