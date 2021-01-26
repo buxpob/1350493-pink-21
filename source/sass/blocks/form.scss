@@ -107,15 +107,13 @@
 
 .form__warning-text {
   color: $red-basic;
+}
 
-  &--desktop {
-    display: none;
-  }
+.form__warning-text-desktop {
+  display: none;
 
   @media (min-width: $desktop-width) {
-    &--desktop {
-      display: inline-block;
-    }
+    display: inline-block;
   }
 }
 
