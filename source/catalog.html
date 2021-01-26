@@ -101,13 +101,13 @@
                 srcset="img/catalog/panorama-desktop.jpg 1x, img/catalog/panorama-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
                 srcset="img/catalog/panorama-tablet.jpg 1x, img/catalog/panorama-tablet@2x.jpg 2x">
-              <img class="news-item__img--panorama" src="img/catalog/panorama-mobile.jpg"
+              <img class="news-item__img-panorama" src="img/catalog/panorama-mobile.jpg"
                 srcset="img/catalog/panorama-mobile@2x.jpg 2x" alt="Уходящий вдаль мост, внизу зелёный лес">
             </picture>
             <blockquote class="news-item__blockquote news-item__blockquote--panorama">
-              <p class="new-item__info">
+              <p class="news-item__info">
                 <cite class="news-item__author-name news-item__author-name--panorama">Анна</cite>
-                <time class="news-item__time news-item__time--panorama" datetime="">(5 минут назад)</time>
+                <span class="news-item__time news-item__time--panorama">(5 минут назад)</span>
               </p>
               <p class="news-item__text news-item__text--panorama">Прыгать или нет? Напишите в комментарии свой совет и
                 смотрите&nbsp;прямую
@@ -131,9 +131,9 @@
                 alt="Видеокамера, напротив боком стоит белая машина на фоне чёрной стены">
             </picture>
             <blockquote class="news-item__blockquote">
-              <p class="new-item__info">
+              <p class="news-item__info">
                 <cite class="news-item__author-name">Левон</cite>
-                <time class="news-item__time" datetime="">(5 часов назад)</time>
+                <span class="news-item__time">(5 часов назад)</span>
               </p>
               <p class="news-item__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <p class="news-item__like">
@@ -154,9 +154,9 @@
                 srcset="img/catalog/photo-2-mobile@2x.jpg 2x" alt="Барабанная установка">
             </picture>
             <blockquote class="news-item__blockquote">
-              <p class="new-item__info">
+              <p class="news-item__info">
                 <cite class="news-item__author-name">Антон</cite>
-                <time class="news-item__time" datetime="">(12 часов назад)</time>
+                <span class="news-item__time">(12 часов назад)</span>
               </p>
               <p class="news-item__text">Соседи будут рады!</p>
               <p class="news-item__like">
@@ -178,9 +178,9 @@
                 alt="Решётчатая стеклянная крыша. За ней видны крыши других зданий">
             </picture>
             <blockquote class="news-item__blockquote">
-              <p class="new-item__info">
+              <p class="news-item__info">
                 <cite class="news-item__author-name">Борис</cite>
-                <time class="news-item__time" datetime="">(20 часов назад)</time>
+                <span class="news-item__time">(20 часов назад)</span>
               </p>
               <p class="news-item__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <p class="news-item__like">
@@ -202,9 +202,9 @@
                 alt="Шатёр с овощами и фруктами. Вывеска «Кубанская бахча»">
             </picture>
             <blockquote class="news-item__blockquote">
-              <p class="new-item__info">
+              <p class="news-item__info">
                 <cite class="news-item__author-name">Сергей</cite>
-                <time class="news-item__time" datetime="">(25 часов назад)</time>
+                <span class="news-item__time">(25 часов назад)</span>
               </p>
               <p class="news-item__text">Самая кубанская в мире!</p>
               <p class="news-item__like">
@@ -225,9 +225,9 @@
                 srcset="img/catalog/photo-5-mobile@2x.jpg 2x" alt="Ноги на фоне гор">
             </picture>
             <blockquote class="news-item__blockquote">
-              <p class="new-item__info">
+              <p class="news-item__info">
                 <cite class="news-item__author-name">Максим</cite>
-                <time class="news-item__time" datetime="">(45 часов назад)</time>
+                <span class="news-item__time">(45 часов назад)</span>
               </p>
               <p class="news-item__text">Где снег-то?</p>
               <p class="news-item__like">
@@ -248,9 +248,9 @@
                 srcset="img/catalog/photo-6-mobile@2x.jpg 2x" alt="Крыло самолёта во время полёта и яркое солнце">
             </picture>
             <blockquote class="news-item__blockquote">
-              <p class="new-item__info">
+              <p class="news-item__info">
                 <cite class="news-item__author-name">Надежда</cite>
-                <time class="news-item__time" datetime="">(45 часов назад)</time>
+                <span class="news-item__time">(45 часов назад)</span>
               </p>
               <p class="news-item__text">Всем GM и взаимные лайки!</p>
               <p class="news-item__like">
@@ -274,8 +274,8 @@
             srcset="img/catalog/photo-7-desktop.jpg 1x, img/catalog/photo-7-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)"
             srcset="img/catalog/photo-7-tablet.jpg 1x, img/catalog/photo-7-tablet@2x.jpg 2x">
-          <img class="news-item__img news-item__img--share" src="img/catalog/photo-7-mobile.jpg"
-            srcset="img/catalog/photo-7-mobile@2x.jpg 2x" alt="Зимняя дорога, уходящая вдаль. По краям деревья">
+          <img class="share-new__img" src="img/catalog/photo-7-mobile.jpg" srcset="img/catalog/photo-7-mobile@2x.jpg 2x"
+            alt="Зимняя дорога, уходящая вдаль. По краям деревья">
         </picture>
 
         <form class="share-new__form" action="#" method="get">
@@ -317,16 +317,16 @@
           </ul>
           <ul class="share-new__scale tools-scale">
             <li class="tools-scale__item tools-scale__item--crop">
-              <input class="tools-scale__range tools-scale__range--crop tools-scale__range--active" type="range" min="1"
-                max="100" value="85" class="slider" id="myRange">
+              <input class="tools-scale__range tools-scale__range--crop tools-scale__range--active slider" type="range"
+                min="1" max="100" value="85" id="myRange1">
             </li>
             <li class="tools-scale__item tools-scale__item--fill">
-              <input class="tools-scale__range tools-scale__range--fill" type="range" min="1" max="100" value="15"
-                class="slider" id="myRange">
+              <input class="tools-scale__range tools-scale__range--fill slider" type="range" min="1" max="100"
+                value="15" id="myRange2">
             </li>
             <li class="tools-scale__item tools-scale__item--contrast">
-              <input class="tools-scale__range tools-scale__range--contrast" type="range" min="1" max="100" value="52"
-                class="slider" id="myRange">
+              <input class="tools-scale__range tools-scale__range--contrast slider" type="range" min="1" max="100"
+                value="52" id="myRange3">
             </li>
           </ul>
           <div class="share-new__buttons tools-buttons">
@@ -351,8 +351,8 @@
           <picture>
             <source media="(min-width: 960px)" srcset="img/footer/logo-pink-footer-desktop.svg">
             <img src="img/footer/logo-pink-footer.svg" width="145" height="40" alt="Логотип сайта «Pink»">
+          </picture>
         </a>
-        </picture>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item"><a class="social__link" href="#"><img src="img/footer/twitter-logo.svg" width="18"
@@ -371,8 +371,8 @@
               <path
                 d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
                 fill="#D22856" />
+            </svg>
           </a>
-          </svg>
         </div>
       </div>
 
