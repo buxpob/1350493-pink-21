@@ -139,6 +139,13 @@
   }
 }
 
+.news-item a {
+  @media (min-width: $tablet-width) {
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
 .news-item__like-text {
   display: inline-block;
 
