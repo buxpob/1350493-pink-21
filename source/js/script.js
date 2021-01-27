@@ -19,4 +19,3 @@ navMainToggle.addEventListener('click', function () {
     navMainBox.classList.remove('main-nav__box--opened');
   }
 });
-
