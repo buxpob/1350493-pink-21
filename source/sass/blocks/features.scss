@@ -1,11 +1,11 @@
 .features {
-  background-image: url("../../img/Index/bg-features-mobile.svg");
+  background-image: url("../img/index/bg-features-mobile.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 160px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/Index/bg-features-tablet.svg");
+    background-image: url("../img/index/bg-features-tablet.svg");
     background-position: center 212px;
   }
 
